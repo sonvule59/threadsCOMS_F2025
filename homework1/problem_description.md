@@ -148,23 +148,29 @@ Output: GCD: 6 LCM: 36
 ```
 
 ---
+## Problem 10 — Length of Last Word
+**Skills:** While loop, string traversal
+**Goal:** Read a line of text and print the length of the last word (a word = consecutive non-space characters). If there are no words, print `0`.
 
-## Problem 10 — FizzBuzz++
-**Skills:** Condition combination, loops  
-**Goal:** For integers `a..b` inclusive:
-- multiple of 3 → `Fizz`
-- multiple of 5 → `Buzz`
-- multiple of 7 → `Bazz`  
-Combine when multiple conditions apply (e.g., 15 → `FizzBuzz`, 21 → `FizzBazz`).  
-Print **one token per line**.
 
-**Example**
+**Hints:**
+- Start from the **end** of the string and skip over spaces until you reach a letter.
+- Then, keep counting letters until you hit another space or the beginning of the line.
+- You don’t need lists or arrays, just a simple `while` loop.
+
+
+**Examples**
 ```
-Input:  14 16
-Output:
-Bazz
-FizzBuzz
-16
+Input: Hello World
+Output: 5
+
+
+Input: fly me to the moon
+Output: 4
+
+
+Input:
+Output: 0
 ```
 
 ---
@@ -172,4 +178,4 @@ FizzBuzz
 ### General Notes
 - Keep outputs exactly as shown (spacing, capitalization, punctuation).
 - Only add special formatting when asked (e.g., one decimal in Problem 2).
-- Use clear variable names and keep logic inside the provided helper functions where applicable.
+
